@@ -601,7 +601,7 @@ export class AmqpConnection {
     return handler(message, msg, headers);
   }
 
-  private async setupQueue(
+  public async setupQueue(
     subscriptionOptions: MessageHandlerOptions,
     channel: ConfirmChannel
   ): Promise<string> {
